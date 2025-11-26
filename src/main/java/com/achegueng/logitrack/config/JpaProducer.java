@@ -34,7 +34,7 @@ public class JpaProducer {
         props.put("hibernate.archive.autodetection", "class");
 
         // escanea el/los paquetes donde se encuetran los @Entity
-        Set<Class<?>> entities = new Reflections("com.smarroquin.logitrack.models")
+        Set<Class<?>> entities = new Reflections("com.achegueng.logitrack.models")
                 .getTypesAnnotatedWith(Entity.class);
         // si se tienen más paquetes, se debe repetir con otro Reflections y añadir al set
 
